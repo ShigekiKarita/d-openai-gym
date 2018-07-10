@@ -186,13 +186,13 @@ version (gym_test) unittest {
         }
         assert(reward > 0);
     }
-    {
-        auto env = Environment("127.0.0.1:5000", "MsPacman-v0");
-        assert(Discrete.from(env.actionInfo) == 9);
-        auto o = Box.from(env.observationInfo);
-        assert(o.shape == [210, 160, 3]);
-        assert(o.high.length == 210 * 160 * 3);
-        auto a = Discrete.from(env.actionInfo);
-        assert(a == 9);
-    }
+    // {
+    //     auto env = Environment("127.0.0.1:5000", "MsPacman-v0");
+    //     assert(Discrete.from(env.actionInfo) == 9);
+    //     auto o = Box.from(env.observationInfo);
+    //     assert(o.shape == [210, 160, 3]);
+    //     assert(o.high.length == 210 * 160 * 3);
+    //     auto a = Discrete.from(env.actionInfo);
+    //     assert(a == 9);
+    // }
 }
