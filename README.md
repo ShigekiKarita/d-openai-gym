@@ -9,7 +9,7 @@ D-language binding / DUB package of https://github.com/openai/gym-http-api
 
 random agent in example.d
 
-```
+``` d
 import gym : Environment, Discrete;
 import std.range : iota;
 import std.random : choice;
