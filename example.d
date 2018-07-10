@@ -13,7 +13,7 @@ void main() {
         auto n = cast(size_t) Discrete.from(env.actionInfo);
         for (auto state = env.reset(); !state.done;) {
             auto action = choice(iota(n)); // left/right
-            state = env.step(action, true); // render
+            state = env.step(action, false); // not render
             totalReward += state.reward;
             writeln(state.observation);
         }
