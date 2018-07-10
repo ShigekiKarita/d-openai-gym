@@ -1,4 +1,9 @@
-# openai gym for D
+# D openai gym
+
+[![Build Status](https://travis-ci.org/ShigekiKarita/d-openai-gym.svg?branch=master)](https://travis-ci.org/ShigekiKarita/d-openai-gym)
+[![Dub version](https://img.shields.io/dub/v/d-openai-gym.svg)](https://code.dlang.org/packages/d-openai-gym)
+
+D-language binding / DUB package of https://github.com/openai/gym-http-api
 
 ## usage
 
